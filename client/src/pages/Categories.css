@@ -1,0 +1,9 @@
+.category-link{
+    color: white !important;
+}
+
+.category-link:hover{
+    transition: transform 0.4s;
+    transform: scale(1.2);
+    background-color: green;
+}

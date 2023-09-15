@@ -1,0 +1,11 @@
+.policy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+li{
+    margin-top: 15px;
+}

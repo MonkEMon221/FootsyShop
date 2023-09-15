@@ -1,0 +1,24 @@
+p{
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+}
+.footer{
+    padding: 30px;
+    color: #fff;
+    background-color: #000000;
+    background: -webkit-linear-gradient(to right,
+    #434343
+    #000000);
+    background: linear-gradient(to right, #434343, #000000);
+}
+.footers{
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+.footers:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,17 @@
+
+.contactus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.contact-heading{
+    background-color: black;
+    color: white;
+    padding: 7px 10px;
+    text-align: center;
+    border-radius: 5%;
+    width: fit-content;
+}

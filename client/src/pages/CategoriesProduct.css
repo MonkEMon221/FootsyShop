@@ -1,0 +1,45 @@
+.home-page h1 {
+    color: gray;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .home-page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home-page .card {
+    background-color: rgba(128, 128, 128, 0.097);
+    width: 18rem;
+  }
+  .home-page .card-name-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .home-page .price {
+    color: green!important;
+    font-weight: bold;
+  }
+  .home-page button {
+    border-radius: 0;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .home-page .card-text {
+    color: rgb(90, 89, 89);
+  }
+  
+  .home-page .card img:hover {
+    transition: transform 0.3s;
+    transform: scale(0.9);
+  }
+  
+  .home-page .card-img-top {
+    height: 300px !important;
+    object-fit: cover;
+  }
