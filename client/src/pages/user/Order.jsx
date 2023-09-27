@@ -1,9 +1,10 @@
 import Layout from "../../components/Layouts/Layout";
 import UserMenu from "../../components/Layouts/UserMenu";
-import useCart from "../../context/useCart";
 
 const Order = () => {
-  const [cart] = useCart();
+  // const [cart] = useCart();
+  const orders = JSON.parse(localStorage.getItem("orders"));
+  let key = 1;
   const api = import.meta.env.VITE_API;
   return (
     <Layout title={"Your Orders"}>
@@ -13,8 +14,8 @@ const Order = () => {
             <UserMenu />
           </div>
           <div className="col-md-9">
-            {cart.map((c) => (
-              <div key={c._id} className="card d-flex flex-row mb-3 ">
+            {orders.map((c) => (
+              <div key={key++} className="card d-flex flex-row mb-3 ">
                 <img
                   src={`${api}/api/v1/product/product-image/${c._id}`}
                   className="p-3 object-fit-cover"

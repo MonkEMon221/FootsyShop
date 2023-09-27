@@ -23,6 +23,15 @@ const CartPage = () => {
     }
   };
 
+  const onCheckOutClick = () => {
+    toast.success("Order Placed Successfully");
+    localStorage.setItem("orders", JSON.stringify([...cart]));
+    localStorage.setItem("cart", []);
+    navigate("/dashboard/user/orders");
+
+    window.location.reload();
+  };
+
   const totalPrice = () => {
     try {
       let total = 0;
@@ -39,7 +48,7 @@ const CartPage = () => {
   };
   return (
     <Layout title={"Cart"}>
-      <div className="text-center w-100 mt-3 p-3">
+      <div className=" w-100 mt-3 p-3">
         <div>
           <h2 className="text-uppercase mb-3">
             Hi! {auth?.token ? `${auth?.user?.name}` : ""}
@@ -97,10 +106,7 @@ const CartPage = () => {
                   </button>
                   <button
                     className="btn btn-outline-success mt-3 btn-order"
-                    onClick={() => {
-                      toast.success("Order Placed Successfully");
-                      navigate("/dashboard/user/orders");
-                    }}
+                    onClick={onCheckOutClick}
                   >
                     Checkout Now
                   </button>
