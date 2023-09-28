@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/cart"
+  to = "/dashboard/user/orders"
+  status = 200
