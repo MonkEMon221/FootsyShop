@@ -30,7 +30,7 @@ const CartPage = () => {
     localStorage.setItem("cart", []);
     navigate("/dashboard/user/orders");
 
-    window.location.reload();
+    // window.location.reload();
   };
 
   const totalPrice = () => {
