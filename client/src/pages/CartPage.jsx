@@ -10,6 +10,7 @@ const CartPage = () => {
   const [cart, setCart] = useCart();
   const [auth] = useAuth();
   const api = import.meta.env.VITE_API;
+  let key = 1;
 
   const removeCartItem = (pid) => {
     try {
@@ -66,7 +67,7 @@ const CartPage = () => {
         <div className="row w-100 mt-5 d-flex justify-content-center">
           <div className="col-md-5 ">
             {cart.map((c) => (
-              <div key={c._id} className="card d-flex flex-row mb-3 ">
+              <div key={key++} className="card d-flex flex-row mb-3 ">
                 <img
                   src={`${api}/api/v1/product/product-image/${c._id}`}
                   className="p-3 object-fit-cover"
