@@ -1,4 +1,4 @@
 [[redirects]]
-  from = "/cart"
-  to = "/dashboard/user/orders"
+  from = "/*"
+  to = "/index.html"
   status = 200
